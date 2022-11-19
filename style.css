@@ -90,7 +90,7 @@ span:nth-child(2) {
     #0c0a0a 80%,
     #000000 100%
   );
-  box-shadow: 0 0 100px purple, 0 0 200px purple;
+  box-shadow: 0 0 100px #8fe242, 0 0 200px #8fe242;
 }
 .stars {
   width: 1px;
@@ -104,7 +104,7 @@ span:nth-child(2) {
   height: 40vw;
   max-height: 40vh;
   background: linear-gradient(#8fe242 0%, rgba(86, 197, 56, 0.347) 100%);
-  box-shadow: inset 0 0 20px #800080, 0 0 120px #800080, 0 35vh 400px #add8e64d;
+  box-shadow: inset 0 0 20px #8fe242, 0 0 120px #8fe242, 0 35vh 400px #add8e64d;
   border-radius: 50%;
   position: absolute;
   inset: auto 0 55vh 0;
@@ -148,7 +148,7 @@ span:nth-child(2) {
   z-index: 20;
 }
 #mountain div {
-  background: linear-gradient(#090910 40%, #450547 100%);
+  background: linear-gradient(#8fe2422e 40%, #8fe242 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   position: absolute;
   z-index: 10;
@@ -226,5 +226,42 @@ span:nth-child(2) {
     width: 30vw;
     height: 10.8vw;
     font-size: 6vw;
+    color: #fff;
+  }
+}
+
+.dog1 {
+  z-index: 1000;
+  width: 800px;
+}
+
+.dog2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+}
+
+/* mobile breakpoint */
+@media (max-width: 768px) {
+  .dog1 {
+    width: 400px;
+    z-index: 800;
+  }
+
+  .dog2 {
+    z-index: 600;
+    width: 300px;
+  }
+
+  .dog3 {
+    width: 700px;
+  }
+  #neon {
+    font-size: 16vw;
+    color: #fff;
+    width: 100%;
   }
 }
